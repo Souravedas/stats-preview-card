@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet');
+
+:root{
+--Very-dark-blue: hsl(233, 47%, 7%);
+--Dark-desaturated-blue: hsl(244, 38%, 16%);
+--Soft-violet: hsl(277, 64%, 61%);
+
+
+--White: hsl(0, 0%, 100%);
+--Slightly-transparent-white-1: hsla(0, 0%, 100%, 0.75);
+--Slightly-transparent-white-2: hsla(0, 0%, 100%, 0.6);
+
+--font-1: "Inter";
+--font-2: "Lexend deca"
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-1);
+    background-color: var(--Very-dark-blue);
+}
+
+.outter-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.outter-wrapper .inner-wrapper{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.inner-wrapper .content-info{
+    width: 30%;
+    height: auto;
+    border-radius: 10px 0 0 10px;
+    background-color: var(--Dark-desaturated-blue);
+    color: var(--White);
+    padding: 75px;
+}
+
+.content-info h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--White);
+    padding-bottom: 40px;
+    display: block;
+}
+
+.content-info h1 span{
+    color: var(--Soft-violet);
+}
+
+.content-info p{
+    font-size: 18px;
+    line-height: 1.9;
+    color: var(--Slightly-transparent-white-2);
+    padding-bottom: 70px;
+}
+
+.numbers td{
+    font-size: 28px;
+    padding-right: 90px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+.content-info table tr:nth-child(2){
+    color: var(--Slightly-transparent-white-2);
+    text-transform: uppercase;
+    font-family: var(--font-2);
+    font-size: 14px;
+}
+
+.inner-wrapper .content-img{
+    width: 30%;
+    height: auto;
+    border-radius: 0 10px 10px 0;
+    overflow: hidden;
+    background-image: url('./images/image-header-desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.content-img .bg-img{
+    background-color: var(--Soft-violet);
+    width: 100%;
+    height: 100%;
+    content: "";
+    opacity: .6;
+}
+
+.content-img img{
+    width: 100%;
+    height: 100%;
+}
